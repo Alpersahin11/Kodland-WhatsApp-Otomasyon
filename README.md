@@ -16,6 +16,7 @@ Kodland eğitmenleri için geliştirilmiş **otomatik WhatsApp mesaj gönderme**
 git clone https://github.com/alpersah11/Kodland-WhatsApp-Otomasyon.git
 cd Kodland-WhatsApp-Otomasyon
 pip install -r requirements.txt
+```
 
 ## 📂 Ayarlar
 
@@ -23,7 +24,7 @@ Projenin davranışını `ayarlar.py` dosyası üzerinden değiştirebilirsiniz:
 
 | Ayar          | Açıklama                                                          | Örnek                                |
 |---------------|-------------------------------------------------------------------|--------------------------------------|
-| `group_link`  | Kodland BackOffice grup linki                                     | `"https://backoffice.kodland.org/en/group_48859/"` |
+| `group_link`  | Kodland BackOffice grup linki                                     | `"https://backoffice.kodland.org/en/group_..../"` |
 | `grup_kontrol`| Numara grupta var mı kontrol edilsin mi? (True / False)           | `True`                               |
 | `grup_davet`  | Tanışma mesajı gönderilsin mi? (True / False)                     | `False`                              |
 | `message_detay` | Grup adı ve WhatsApp grubu linki                                  | `{"Grup":"TUR29....","Link":"https://chat.whatsapp.com/..."}` |
@@ -31,14 +32,26 @@ Projenin davranışını `ayarlar.py` dosyası üzerinden değiştirebilirsiniz:
 
 ## 🔧 Özelleştirme
 
-- **Mesaj İçeriği:** `ayarlar.py` → `message` değişkeni içerisinde kendi mesajınızı yazabilirsiniz.
+- **Mesaj İçeriği:** `ayarlar.py` → `message` değişkeni içerisinde kendi mesajınızı yazabilirsiniz ve Metin biçimlendirme Yapabilirsiniz
+  Metin biçimlendirme örnekleri:
+
+- *İtalik metin* için:  `_metin_`  
+  Örnek: *İtalik metin* veya _İtalik metin_
+
+- **Kalın metin** için: `**metin**`  
+  Örnek: **Kalın metin** 
+
+- ~~Üstü çizili metin~~ için: `~~metin~~`  
+  Örnek: ~~Üstü çizili metin~~
+  
 - **Emoji Desteği:** Mesaj içerisinde emojiler kullanılabilir.
-- **Numara Listesi:** Numara listesini `.csv` veya başka formatlardan alacak şekilde geliştirebilirsiniz.
 
-## 📎 Örnek Mesaj Formatı
 
-```plaintext
-Merhaba, ben Alper Şahin. Bilgisayar mühendisiyim ve çocuklara yönelik yazılım, algoritma ve teknoloji eğitimleri vermekteyim...
+## 🚀 Projeyi Çalıştırma
 
-🎉 Kodland’a hoş geldiniz!
-👉 WhatsApp Grubu Linki: https://chat.whatsapp.com/.....
+Projeyi çalıştırmak için aşağıdaki komutu kullanabilirsiniz:
+
+```bash
+python main.py
+```
+
