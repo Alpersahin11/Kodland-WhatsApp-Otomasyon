@@ -13,7 +13,7 @@ Kodland eğitmenleri için geliştirilmiş **otomatik WhatsApp mesaj gönderme**
 ## ⚙️ Kurulum
 
 ```bash
-git clone https://github.com/alpersah11/Kodland-WhatsApp-Otomasyon.git
+git clone https://github.com/alpersahin11/Kodland-WhatsApp-Otomasyon.git
 cd Kodland-WhatsApp-Otomasyon
 pip install -r requirements.txt
 ```
