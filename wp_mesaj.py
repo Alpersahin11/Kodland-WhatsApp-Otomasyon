@@ -31,14 +31,8 @@ def send_whatsapp_message(driver, phone_numbers, message):
             pyautogui.hotkey("ctrl", "v")  # Yapıştır
             time.sleep(1)
             pyautogui.press("enter")
-
-            # # Mesajı tek kutuda, çok satırlı göndermek için
-            # for line in message.strip().split("\n"):
-            #     msg_box.send_keys(line)
-            #     msg_box.send_keys(Keys.SHIFT, Keys.ENTER)  # Yeni satır oluştur
-
+            
             time.sleep(1)
-            #msg_box.send_keys(Keys.ENTER)  # Mesajı gönder
 
             print(f"✅ Mesaj gönderildi: {phone_number}")
 
