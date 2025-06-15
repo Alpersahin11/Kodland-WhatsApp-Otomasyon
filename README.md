@@ -55,3 +55,4 @@ Projeyi çalıştırmak için aşağıdaki komutu kullanabilirsiniz:
 python main.py
 ```
 
+- Lütfen otomasyonu etik ve yasal sınırlar içinde kullanınız.
